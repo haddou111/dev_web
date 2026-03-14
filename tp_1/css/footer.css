@@ -1,0 +1,105 @@
+/* === BLOCK footer === */
+.footer {
+    background-color: var(--bg-footer);
+    padding-top: 80px;
+}
+
+/* === BLOCK contact === */
+.contact {
+    padding: 0 40px 80px;
+    max-width: 640px;
+    /* formulaire centré et pas trop large */
+    margin: 0 auto;
+}
+
+/* === ELEMENT : titre === */
+.contact__title {
+    font-size: 1.8rem;
+    color: var(--text-white);
+    margin-bottom: 40px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-color);
+    text-align: center;
+}
+
+/* === ELEMENT : formulaire === */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* espace entre chaque champ */
+}
+
+/* === ELEMENT : groupe label + input === */
+.contact__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* === ELEMENT : label === */
+.contact__label {
+    color: var(--text-muted-2);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === ELEMENT : champs texte === */
+.contact__input,
+.contact__textarea {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: var(--text-white);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: vertical;
+    /* textarea redimensionnable en hauteur seulement */
+}
+
+/* focus : bordure colorée quand l'utilisateur clique */
+.contact__input:focus,
+.contact__textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* placeholder grisé */
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: var(--text-footer);
+}
+
+/* === ELEMENT : bouton === */
+.contact__btn {
+    background-color: var(--primary-color);
+    color: var(--bg-hero);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+    /* bouton ne prend pas toute la largeur */
+}
+
+.contact__btn:hover {
+    background-color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+/* === footer bottom === */
+.footer__bottom {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer__copy {
+    color: var(--text-footer);
+    font-size: 0.85rem;
+}

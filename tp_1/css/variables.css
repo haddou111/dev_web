@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #4fc3f7;
+    --bg-navbar: #1a1a2e;
+    --bg-hero: #0f0f1a;
+    --bg-skills: #12122a;
+    --bg-timeline: #0f0f1a;
+    --bg-social: #12122a;
+    --bg-footer: #0a0a18;
+    --bg-card: #1e1e3a;
+    --border-color: #2e2e5a;
+    --text-white: #ffffff;
+    --text-gray: #cccccc;
+    --text-muted: #777777;
+    --text-muted-2: #aaaaaa;
+    --text-footer: #555577;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-hero);
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}

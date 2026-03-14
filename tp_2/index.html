@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header class="header">
+          <h3 class="header__title">Créez votre compte et prenez le contrôle de votre expérience dès aujourd'hui !</h3>
+          <div class="header__img">
+            <img src="data/image/enset_logo.jpeg" alt="logo enset ">
+          </div>
+          
+    </header>
+        <main class="main">
+            <section class="main__hero">
+
+                <div class="main__hero-title">
+                    <h1>Formulaire d'inscription</h1>
+                </div>
+
+                <div class="main__hero-content">
+                    <form method="post" name="formulaire" class="form">
+
+                        <div class="form__group">
+                            <label for="nom" class="form__label">Nom</label>
+                            <input type="text" name="nom" id="nom" 
+                                class="form__input" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="prenom" class="form__label">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" 
+                                class="form__input" placeholder="Votre prénom" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" name="email" id="email" 
+                                class="form__input" placeholder="votre@email.com" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="telephone" class="form__label">Téléphone</label>
+                            <input type="tel" name="telephone" id="telephone" 
+                                class="form__input" pattern="+33-6-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="+33 6 xx xx xx xx">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="date-naissance" class="form__label">Date de naissance</label>
+                            <input type="date" name="date_naissance" id="date-naissance" 
+                                class="form__input">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="pass" class="form__label">Mot de passe</label>
+                            <input type="password" name="pass" id="pass" 
+                                class="form__input" placeholder="••••••••" 
+                                pattern="(?=.*[A-Z])(?=.*\d).{8,}"
+                                title="min 8 caractères, 1 majuscule, 1 chiffre"
+                                  required>
+                        </div>
+
+        <div class="form__items">
+            <label for="choix-pays" class="form__label">Pays :</label>
+            <select name="pays" id="choix-pays" class="form__input">
+                
+                <option value="">-- Choisir un pays --</option>
+
+                <optgroup label=" Afrique du Nord">
+                    <option value="maroc">Maroc</option>
+                    <option value="algerie">Algérie</option>
+                    <option value="tunisie">Tunisie</option>
+                    <option value="libye">Libye</option>
+                </optgroup>
+
+                <optgroup label=" Afrique Subsaharienne">
+                    <option value="senegal">Sénégal</option>
+                    <option value="cote-ivoire">Côte d'Ivoire</option>
+                    <option value="mali">Mali</option>
+                    <option value="niger">Niger</option>
+                </optgroup>
+
+                <optgroup label=" Moyen-Orient">
+                    <option value="arabie-saoudite">Arabie Saoudite</option>
+                    <option value="emirats">Émirats Arabes Unis</option>
+                    <option value="qatar">Qatar</option>
+                    <option value="koweit">Koweït</option>
+                    <option value="jordanie">Jordanie</option>
+                </optgroup>
+
+                <optgroup label=" Europe">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="italie">Italie</option>
+                </optgroup>
+
+                <optgroup label=" Asie">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+                    <option value="inde">Inde</option>
+                    <option value="coree-sud">Corée du Sud</option>
+                </optgroup>
+
+                <optgroup label=" Amériques">
+                    <option value="etats-unis">États-Unis</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexique">Mexique</option>
+                    <option value="bresil">Brésil</option>
+                </optgroup>
+
+                <optgroup label=" Océanie">
+                    <option value="australie">Australie</option>
+                    <option value="nouvelle-zelande">Nouvelle-Zélande</option>
+                    <option value="papouasie">Papouasie-Nouvelle-Guinée</option>
+                    <option value="fidji">Fidji</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Genre</legend>
+                            <div class="form__radio-group">
+                                <label for="homme" class="form__radio-label">
+                                    <input type="radio" name="genre" id="homme" value="homme">
+                                    Homme
+                                </label>
+                                <label for="femme" class="form__radio-label">
+                                    <input type="radio" name="genre" id="femme" value="femme">
+                                    Femme
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Centres d'intérêt</legend>
+                            <div class="form__checkbox-group">
+                                <label for="info" class="form__checkbox-label">
+                                    <input type="checkbox" name="info" id="info">
+                                    Informatique
+                                </label>
+                                <label for="science" class="form__checkbox-label">
+                                    <input type="checkbox" name="science" id="science">
+                                    Science
+                                </label>
+                                <label for="sport" class="form__checkbox-label">
+                                    <input type="checkbox" name="sport" id="sport">
+                                    Sport
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form__group">
+                            <label for="biographie" class="form__label">Biographie</label>
+                            <textarea name="biographie" id="biographie" 
+                                    class="form__textarea" rows="6" 
+                                    placeholder="Parlez-nous de vous..."></textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="upload" class="form__label">Photo de profil</label>
+                            <input type="file" name="upload" id="upload" 
+                                class="form__file" accept="image/*">
+                        </div>
+
+                        <div class="form__group">
+                            <button type="submit" class="form__btn">Envoyer</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </section>
+        </main>
+ <footer class="footer">
+        <div class="footer_bottom">
+            <p class="footer_copy">© 2026 Formulaire validation <br> outalha haddou </p>
+        </div>
+    </footer>
+
+</body>
+</html>

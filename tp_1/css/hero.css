@@ -1,0 +1,62 @@
+/* === BLOCK === */
+.hero {
+    display: flex;
+    /* image et texte côte à côte */
+    align-items: center;
+    /* centré verticalement */
+    gap: 48px;
+    padding: 80px 40px;
+    background-color: var(--bg-hero);
+}
+
+/* === ELEMENT : wrapper de l'image === */
+.hero__image-wrapper {
+    flex-shrink: 0;
+    /* empêche l'image de rétrécir */
+}
+
+/* === ELEMENT : l'image === */
+.hero__image {
+    width: 180px;
+    /* plus grande que 100px, c'est un hero ! */
+    height: 180px;
+    border-radius: 50%;
+    /* photo ronde */
+    object-fit: cover;
+    /* recadre sans déformer */
+    border: 4px solid var(--primary-color);
+    /* cercle coloré autour */
+}
+
+/* === ELEMENT : zone de texte === */
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* === ELEMENT : titre h1 === */
+.hero__title {
+    font-size: 2rem;
+    color: var(--text-white);
+    margin: 0;
+}
+
+/* === ELEMENT : ton prénom mis en valeur === */
+.hero__name {
+    color: var(--primary-color);
+}
+
+/* === ELEMENT : paragraphes === */
+.hero__text {
+    color: var(--text-muted-2);
+    line-height: 1.8;
+    /* hauteur de ligne confortable */
+    margin: 0;
+}
+
+/* === ELEMENT : les <strong> importants === */
+.hero__highlight {
+    color: var(--text-white);
+    font-weight: 600;
+}

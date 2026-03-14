@@ -1,0 +1,104 @@
+.timeline {
+    padding: 80px 40px;
+    background-color: var(--bg-timeline);
+}
+
+.timeline__title {
+    font-size: 1.8rem;
+    color: var(--text-white);
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.timeline__caption {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.timeline__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timeline__head {
+    background-color: var(--bg-card);
+}
+
+.timeline__th {
+    padding: 16px 20px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.timeline__row {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s;
+}
+
+.timeline__row:hover {
+    background-color: var(--bg-navbar);
+}
+
+.timeline__date {
+    padding: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.timeline__desc {
+    padding: 20px;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.timeline__mention {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeline__mention--bien {
+    color: #81c784;
+}
+
+.timeline__mention--tres-bien {
+    color: var(--primary-color);
+}
+
+.timeline__mention--encours {
+    color: #ffb74d;
+}
+
+.timeline__tasks {
+    padding: 16px 20px;
+}
+
+.timeline__task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timeline__task-list li {
+    color: var(--text-gray);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.timeline__task-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}

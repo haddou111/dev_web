@@ -1,0 +1,237 @@
+/* --- CONTACT PAGE STYLES --- */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.contact-page {
+    padding-top: 120px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at top right, #1a0000 0%, #000000 50%);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    z-index: 10;
+}
+
+.contact-title {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #df0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- CONTACT LAYOUT (Split) --- */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5% 5rem;
+}
+
+/* GAUCHE : INFORMATIONS DE CONTACT */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.info-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: rgba(20, 20, 24, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.info-block:hover {
+    transform: translateX(10px);
+    border-color: #df0000;
+    background: rgba(30, 30, 35, 0.8);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 10px rgba(223,0,0,0.5));
+}
+
+.info-text h3 {
+    color: #df0000;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.info-text p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    background: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.social-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #000;
+    border-color: #df0000;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(223, 0, 0, 0.4);
+}
+
+.social-btn:hover img {
+    opacity: 1;
+}
+
+/* DROITE : FORMULAIRE DE CONTACT */
+.contact-form-container {
+    flex: 1.2;
+    background: rgba(20, 20, 24, 0.8);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Inputs Animés CSS Pur */
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: #df0000;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Floating Label Transition CSS pure via :placeholder-shown et :focus */
+.form-label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    color: #999999;
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Mouvements du label quand on tape ou se focus */
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+    top: -15px;
+    font-size: 0.85rem;
+    color: #df0000;
+    font-weight: 600;
+}
+
+/* Input invalide/valide en CSS pur */
+.form-input:not(:placeholder-shown):valid {
+    border-bottom-color: #28a745; /* Vert quand valide */
+}
+
+/* Bouton Envoyer */
+.form-submit {
+    margin-top: 1rem;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    background: #df0000;
+}
+
+.form-submit:hover {
+    background: #ff1a1a;
+    box-shadow: 0 10px 20px rgba(223, 0, 0, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .contact-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact-form-container {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    .contact-form-container {
+        padding: 2rem 1.5rem;
+    }
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
