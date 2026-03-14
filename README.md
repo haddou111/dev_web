@@ -22,3 +22,9 @@ Ce projet est né de la volonté de combiner ma passion pour la moto avec le dé
 - `/site` : Code source de la plateforme moto (TP3).
 - `/tp_1` : Premier travail pratique.
 - `/tp_2` : Deuxième travail pratique.
+
+## Leçons Apprises & Optimisation
+
+Ce projet a été une excellente occasion de comprendre que le bon fonctionnement en local ne garantit pas une expérience utilisateur optimale en production. Voici les points clés retenus :
+- **Optimiser au maximum** : Le poids des images et la réactivité du site sont cruciaux. Ce qui semble "passer" sur une machine puissante en local peut être très lent sur un serveur distant ou une connexion mobile.
+- **Approche étape par étape** : En réglant les problèmes de responsive et de performance les uns après les autres, on finit par maîtriser l'ensemble de la structure et offrir un site de qualité premium.
