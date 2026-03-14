@@ -1,253 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>portfolio haddoou </title>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar__logo">haddou outalha</div>
-            
-            <div class="navbar__nav">
-                <input type="checkbox" id="navbar__toggle" class="navbar__toggle">
-                
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="#accueil" class="navbar__link">Accueil</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#apropos" class="navbar__link">À propos</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#competences" class="navbar__link">Compétences</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#formation" class="navbar__link">Formation</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#experience" class="navbar__link">Expérience</a>
-                    </li>
-                </ul>
-
-                <a href="#contact" class="navbar__link navbar__link--cta">Contact</a>
-
-                <label for="navbar__toggle" class="navbar__hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="apropos" class="hero">
-            <div class="hero__image-wrapper">
-                <img class="hero__image" src="image/pourtfoloi_image.png" alt="photo de haddou" height="100px"
-                    width="100px">
-            </div>
-            <div class="hero__content">
-                <h1 class="hero__title">Bonjour de suis <span class="hero__name">Haddou outalha </span> :</h1>
-                <div class="hero__data">
-                    <p class="hero__data--text">
-                        Étudiant en 1ère année du cycle ingénieur à l'
-                        <strong>ENSET Mohammedia</strong>,
-                        je suis animé par une passion profonde pour l'informatique et le développement logiciel.
-                        Mon parcours en ecole superieur de technologie m'a forgé une rigueur informatique
-                        et une capacité d'analyse que j'applique à mes projets tech.
-                    </p>
-                    <p class="hero__data--text">
-                        Durant mon premier semestre, j'ai travaillé sur des projets allant de l'
-                        <strong>analyse de la complexité algorithmique</strong>
-                        à la création d'une <strong>application d'analyse de CV par OCR</strong>,
-                        en passant par la conception d'un
-                        <strong>réseau social</strong> pour la communauté ENSET
-                        et un système de <strong>sécurité intelligent pour motocyclistes</strong>.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="competences" class="skills">
-            <h2 class="skills__title"> compétance :</h2>
-            <ul class="skills__list">
-                <li class="skills__item"><span class="skills__icon"></span>bon metrise des base de programmationn </li>
-                <li class="skills__item"><span class="skills__icon"></span>metrise des base de dev </li>
-                <li class="skills__item"><span class="skills__icon"></span>je suis encore d'apprendre </li>
-                <li class="skills__item"><span class="skills__icon"></span>blaala </li>
-                <li class="skills__item"><span class="skills__icon"></span>blala </li>
-                <li class="skills__item"><span class="skills__icon"></span>balaa </li>
-            </ul>
-        </section>
-
-        <section id="formation" class="timeline">
-
-            <h2 class="timeline__title">Formation</h2>
-            <p class="timeline__caption">
-                Parcours académique effectué durant mes études
-            </p>
-
-            <table class="timeline__table">
-                <thead class="timeline__head">
-                    <tr>
-                        <th class="timeline__th">Période</th>
-                        <th class="timeline__th">Description</th>
-                        <th class="timeline__th">Mention</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="timeline__row">
-                        <td class="timeline__date">2023</td>
-                        <td class="timeline__desc">
-                            Obtention du Bac Sciences Physiques — Khénifra
-                        </td>
-                        <td class="timeline__mention timeline__mention--bien">
-                            Bien
-                        </td>
-                    </tr>
-                    <tr class="timeline__row">
-                        <td class="timeline__date">2023 — 2025</td>
-                        <td class="timeline__desc">
-                            Obtention du DUT en Génie Informatique — EST Khénifra
-                        </td>
-                        <td class="timeline__mention timeline__mention--tres-bien">
-                            Très Bien
-                        </td>
-                    </tr>
-                    <tr class="timeline__row">
-                        <td class="timeline__date">2025 — 2028</td>
-                        <td class="timeline__desc">
-                            Préparation du diplôme Ingénieur en Génie Logiciel — ENSET Mohammedia
-                        </td>
-                        <td class="timeline__mention timeline__mention--encours">
-                            En cours
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <section id="experience" class="timeline">
-
-                <h2 class="timeline__title">Expérience</h2>
-                <p class="timeline__caption">
-                    Expériences professionnelles effectuées durant mon parcours à l'EST
-                </p>
-
-                <table class="timeline__table">
-                    <thead class="timeline__head">
-                        <tr>
-                            <th class="timeline__th">Période</th>
-                            <th class="timeline__th">Description</th>
-                            <th class="timeline__th">Tâches réalisées</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr class="timeline__row">
-                            <td class="timeline__date">Mai — Juin 2024</td>
-                            <td class="timeline__desc">
-                                Stage d'initiation chez
-                                <strong>l'ONEE de Khénifra</strong>
-                            </td>
-                            <td class="timeline__tasks">
-                                <ul class="timeline__task-list">
-                                    <li>Réalisation d'une application de calcul de factures</li>
-                                    <li>Gestion de la consommation d'eau — région de Khénifra</li>
-                                </ul>
-                            </td>
-                        </tr>
-
-                        <tr class="timeline__row">
-                            <td class="timeline__date">Avril — Juin 2025</td>
-                            <td class="timeline__desc">
-                                Stage de fin de formation au
-                                <strong>laboratoire de recherche — ESTK</strong>
-                            </td>
-                            <td class="timeline__tasks">
-                                <ul class="timeline__task-list">
-                                    <li>Réorganisation du schéma réseau de l'EST</li>
-                                    <li>Création de la première version du site web de l'école</li>
-                                    <li>Hébergement de l'application de gestion des absences sur le serveur</li>
-                                </ul>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-            </section>
-
-            <section id="contact" class="social">
-                <h2 class="social__title">réseau socieaux :</h2>
-                <ul class="social__list">
-                    <li class="social__items">
-                        <a href="https://github.com/haddou111" alt="lien vers mon repo github" rel="noopener"
-                            target="_blank" class="social__link"><span class="social__label">gituhb account</span> </a>
-                    </li>
-                    <li class="social__items">
-                        <a href="https://linkedin.com/in/" alt="lien vers mon linked in " target="_blank" rel="noopener"
-                            class="social__link"> <span class="social__label">likned in</span> </a>
-                    </li>
-                    <li class="social__items">
-                        <a href="mailto:haddououtalha@gmail.com" alt="lien pour me contacte via email" target="_blank"
-                            class="social__link"><span class="social__label">e-mail</span></a>
-                    </li>
-                    <li class="social__items">
-                        <a href="tel:0618569604" class="social__link"> <span class="social__label">telephone</span></a>
-                    </li>
-                </ul>
-            </section>
-
-    </main>
-    <footer class="footer">
-        <section class="contact">
-
-            <h2 class="contact__title">Contacter Haddou</h2>
-
-            <form method="post" name="contact-haddou" class="contact__form">
-
-                <div class="contact__group">
-                    <label for="nom" class="contact__label">Nom</label>
-                    <input type="text" name="nom" id="nom" class="contact__input" placeholder="Votre nom" required>
-                </div>
-
-                <div class="contact__group">
-                    <label for="prenom" class="contact__label">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" class="contact__input" placeholder="Votre prénom"
-                        required>
-                </div>
-
-                <div class="contact__group">
-                    <label for="email" class="contact__label">Email</label>
-                    <input type="email" name="email" id="email" class="contact__input" placeholder="votre@email.com"
-                        required>
-                </div>
-
-                <div class="contact__group">
-                    <label for="commentaire" class="contact__label">Commentaire</label>
-                    <textarea name="commentaire" id="commentaire" class="contact__textarea"
-                        placeholder="Votre message..." rows="6"></textarea>
-                </div>
-
-                <div class="contact__group">
-                    <button type="submit" class="contact__btn">
-                        Envoyer le message
-                    </button>
-                </div>
-
-            </form>
-
-        </section>
-
-        <div class="footer__bottom">
-            <p class="footer__copy">
-                © 2026 Haddou Ottalha — Tous droits réservés
-            </p>
-        </div>
-    </footer>
-</body>
-
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<link href="css/index.css" rel="stylesheet"/>
+		<title>
+			portfolio haddoou
+		</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<div class="navbar__logo">
+					haddou outalha
+				</div>
+				<div class="navbar__nav">
+					<input class="navbar__toggle" id="navbar__toggle" type="checkbox"/>
+					<ul class="navbar__list">
+						<li class="navbar__item">
+							<a class="navbar__link" href="#accueil">
+								Accueil
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#apropos">
+								À propos
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#competences">
+								Compétences
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#formation">
+								Formation
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#experience">
+								Expérience
+							</a>
+						</li>
+					</ul>
+					<a class="navbar__link navbar__link--cta" href="#contact">
+						Contact
+					</a>
+					<label class="navbar__hamburger" for="navbar__toggle">
+						<span>
+						</span>
+						<span>
+						</span>
+						<span>
+						</span>
+					</label>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero" id="apropos">
+				<div class="hero__image-wrapper">
+					<picture>
+						<source srcset="image/pourtfoloi_image.webp" type="image/webp"/>
+						<img alt="photo de haddou" class="hero__image" decoding="async" height="100px" src="image/pourtfoloi_image.webp" width="100px"/>
+					</picture>
+				</div>
+				<div class="hero__content">
+					<h1 class="hero__title">
+						Bonjour de suis
+						<span class="hero__name">
+							Haddou outalha
+						</span>
+						:
+					</h1>
+					<div class="hero__data">
+						<p class="hero__data--text">
+							Étudiant en 1ère année du cycle
+														ingénieur à l'
+							<strong>
+								ENSET Mohammedia
+							</strong>
+							, je suis animé par une passion profonde pour
+														l'informatique et le développement logiciel. Mon parcours
+														en ecole superieur de technologie m'a forgé une rigueur
+														informatique et une capacité d'analyse que j'applique
+														à mes projets tech.
+						</p>
+						<p class="hero__data--text">
+							Durant mon premier semestre, j'ai travaillé sur des projets
+														allant de l'
+							<strong>
+								analyse de la complexité algorithmique
+							</strong>
+							à la création d'une
+							<strong>
+								application d'analyse de CV par OCR
+							</strong>
+							, en passant par la conception d'un
+							<strong>
+								réseau social
+							</strong>
+							pour la communauté ENSET et un système de
+							<strong>
+								sécurité intelligent pour motocyclistes
+							</strong>
+							.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="skills" id="competences">
+				<h2 class="skills__title">
+					compétance :
+				</h2>
+				<ul class="skills__list">
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						bon metrise des base de programmationn
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						metrise des base de dev
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						je suis encore d'apprendre
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						blaala
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						blala
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon">
+						</span>
+						balaa
+					</li>
+				</ul>
+			</section>
+			<section class="timeline" id="formation">
+				<h2 class="timeline__title">
+					Formation
+				</h2>
+				<p class="timeline__caption">
+					Parcours académique effectué durant mes études
+				</p>
+				<table class="timeline__table">
+					<thead class="timeline__head">
+						<tr>
+							<th class="timeline__th">
+								Période
+							</th>
+							<th class="timeline__th">
+								Description
+							</th>
+							<th class="timeline__th">
+								Mention
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="timeline__row">
+							<td class="timeline__date">
+								2023
+							</td>
+							<td class="timeline__desc">
+								Obtention du Bac Sciences Physiques — Khénifra
+							</td>
+							<td class="timeline__mention timeline__mention--bien">
+								Bien
+							</td>
+						</tr>
+						<tr class="timeline__row">
+							<td class="timeline__date">
+								2023 — 2025
+							</td>
+							<td class="timeline__desc">
+								Obtention du DUT en Génie Informatique — EST
+																Khénifra
+							</td>
+							<td class="timeline__mention timeline__mention--tres-bien">
+								Très Bien
+							</td>
+						</tr>
+						<tr class="timeline__row">
+							<td class="timeline__date">
+								2025 — 2028
+							</td>
+							<td class="timeline__desc">
+								Préparation du diplôme Ingénieur en
+																Génie Logiciel — ENSET Mohammedia
+							</td>
+							<td class="timeline__mention timeline__mention--encours">
+								En cours
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="timeline" id="experience">
+					<h2 class="timeline__title">
+						Expérience
+					</h2>
+					<p class="timeline__caption">
+						Expériences professionnelles effectuées durant mon
+												parcours à l'EST
+					</p>
+					<table class="timeline__table">
+						<thead class="timeline__head">
+							<tr>
+								<th class="timeline__th">
+									Période
+								</th>
+								<th class="timeline__th">
+									Description
+								</th>
+								<th class="timeline__th">
+									Tâches réalisées
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="timeline__row">
+								<td class="timeline__date">
+									Mai — Juin 2024
+								</td>
+								<td class="timeline__desc">
+									Stage d'initiation chez
+									<strong>
+										l'ONEE de Khénifra
+									</strong>
+								</td>
+								<td class="timeline__tasks">
+									<ul class="timeline__task-list">
+										<li>
+											Réalisation d'une application de calcul de factures
+										</li>
+										<li>
+											Gestion de la consommation d'eau — région de
+																						Khénifra
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="timeline__row">
+								<td class="timeline__date">
+									Avril — Juin 2025
+								</td>
+								<td class="timeline__desc">
+									Stage de fin de formation au
+									<strong>
+										laboratoire de recherche — ESTK
+									</strong>
+								</td>
+								<td class="timeline__tasks">
+									<ul class="timeline__task-list">
+										<li>
+											Réorganisation du schéma réseau de
+																						l'EST
+										</li>
+										<li>
+											Création de la première version du site web
+																						de l'école
+										</li>
+										<li>
+											Hébergement de l'application de gestion des
+																						absences sur le serveur
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section class="social" id="contact">
+					<h2 class="social__title">
+						réseau socieaux :
+					</h2>
+					<ul class="social__list">
+						<li class="social__items">
+							<a alt="lien vers mon repo github" class="social__link" href="https://github.com/haddou111" rel="noopener" target="_blank">
+								<span class="social__label">
+									gituhb account
+								</span>
+							</a>
+						</li>
+						<li class="social__items">
+							<a alt="lien vers mon linked in " class="social__link" href="https://linkedin.com/in/" rel="noopener" target="_blank">
+								<span class="social__label">
+									likned in
+								</span>
+							</a>
+						</li>
+						<li class="social__items">
+							<a alt="lien pour me contacte via email" class="social__link" href="mailto:haddououtalha@gmail.com" target="_blank">
+								<span class="social__label">
+									e-mail
+								</span>
+							</a>
+						</li>
+						<li class="social__items">
+							<a class="social__link" href="tel:0618569604">
+								<span class="social__label">
+									telephone
+								</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="contact">
+				<h2 class="contact__title">
+					Contacter Haddou
+				</h2>
+				<form class="contact__form" method="post" name="contact-haddou">
+					<div class="contact__group">
+						<label class="contact__label" for="nom">
+							Nom
+						</label>
+						<input class="contact__input" id="nom" name="nom" placeholder="Votre nom" required="" type="text"/>
+					</div>
+					<div class="contact__group">
+						<label class="contact__label" for="prenom">
+							Prénom
+						</label>
+						<input class="contact__input" id="prenom" name="prenom" placeholder="Votre prénom" required="" type="text"/>
+					</div>
+					<div class="contact__group">
+						<label class="contact__label" for="email">
+							Email
+						</label>
+						<input class="contact__input" id="email" name="email" placeholder="votre@email.com" required="" type="email"/>
+					</div>
+					<div class="contact__group">
+						<label class="contact__label" for="commentaire">
+							Commentaire
+						</label>
+						<textarea class="contact__textarea" id="commentaire" name="commentaire" placeholder="Votre message..." rows="6"></textarea>
+					</div>
+					<div class="contact__group">
+						<button class="contact__btn" type="submit">
+							Envoyer le message
+						</button>
+					</div>
+				</form>
+			</section>
+			<div class="footer__bottom">
+				<p class="footer__copy">
+					© 2026 Haddou Ottalha — Tous droits réservés
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>

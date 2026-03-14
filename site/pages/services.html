@@ -1,163 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motoru — Services</title>
-    <link rel="icon" href="../images/icon_site.jpg">
-    <link rel="stylesheet" href="../style/index.css">
-    <link rel="stylesheet" href="../style/services.css">
-</head>
-<body>
-
-    <!-- HEADER -->
-    <header class="header">
-        <h1 class="header__title">Motoru</h1>
-        <nav class="navbar">
-            <input type="checkbox" id="nav-toggle" class="navbar__toggle">
-            <label for="nav-toggle" class="navbar__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../index.html">Accueil</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="about.html">À propos</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link navbar__link--active" href="services.html">Services</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="gallery.html">Galerie</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main services-page">
-        <!-- HERO SERVICES -->
-        <section class="services-hero">
-            <div class="services-hero__content">
-                <h2 class="services-hero__title">Un service premium<br>pour votre moto</h2>
-                <div class="services-hero__actions">
-                    <button class="btn btn--primary">Prendre rendez-vous</button>
-                    <button class="btn btn--outline">Consultation</button>
-                </div>
-            </div>
-            <div class="services-hero__bg">
-                <img src="../images/home_background.png" alt="Moto d'arrière plan">
-            </div>
-        </section>
-
-        <!-- SERVICES GRID -->
-        <section class="services-grid-section">
-            <div class="services-grid">
-                
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Visite technique</h3>
-                    </div>
-                    <p class="service-card__desc">Contrôle complet de votre moto par nos experts pour garantir votre sécurité lors de vos trajets.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">à partir de 500 DH</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/viste technique.jpg" alt="Visite technique icon">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Vidange complète</h3>
-                    </div>
-                    <p class="service-card__desc">Vidange moteur, remplacement des filtres et vérification approfondie des fluides vitaux.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">à partir de 800 DH</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/vidage.jpg" alt="Vidange icon">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3 (Red Card from inspiration) -->
-                <div class="service-card service-card--red">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Augmentation de<br>performance</h3>
-                        <span class="service-card__badge">Populaire</span>
-                    </div>
-                    <p class="service-card__desc">Stage 1, 2 ou 3. Reprogrammation moteur pour une puissance et un couple maximaux.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">à partir de 2500 DH</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/perforamnce.jpg" alt="Moto performance">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Habillage & Wrap</h3>
-                        <span class="service-card__badge">Nouveau</span>
-                    </div>
-                    <p class="service-card__desc">Personnalisez votre moto avec nos films vinyles de haute qualité. Designs uniques sur mesure.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">à partir de 1500 DH</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/design.png" alt="Wrap icon">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Randonnée en<br>groupe</h3>
-                    </div>
-                    <p class="service-card__desc">Rejoignez nos sorties organisées et profitez des meilleurs circuits guidés avec des passionnés.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">Gratuit (Membres)</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/photo3.jpg" alt="Randonnée icon">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-card__header">
-                        <h3 class="service-card__title">Localisation à distance</h3>
-                        <span class="service-card__badge">Promo</span>
-                    </div>
-                    <p class="service-card__desc">Installation de traceur GPS avec application mobile pour sécuriser et suivre votre moto 24/7.</p>
-                    <div class="service-card__bottom">
-                        <span class="service-card__price">à partir de 1200 DH</span>
-                        <div class="service-card__icon-wrapper">
-                            <img src="../images/S1000_rouge.png" alt="GPS icon">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__bottom">
-            <p class="footer__copy">
-                © 2026 Motoru — Tous droits réservés <br> Outalha Haddou
-            </p>
-        </div>
-    </footer>
-
-</body>
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<title>
+			Motoru — Services
+		</title>
+		<link href="../images/icon_site.jpg" rel="icon"/>
+		<link href="../style/index.css" rel="stylesheet"/>
+		<link href="../style/services.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<h1 class="header__title">
+				Motoru
+			</h1>
+			<nav class="navbar">
+				<input class="navbar__toggle" id="nav-toggle" type="checkbox"/>
+				<label class="navbar__hamburger" for="nav-toggle">
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+				</label>
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a class="navbar__link" href="../index.html">
+							Accueil
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="about.html">
+							À propos
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link navbar__link--active" href="services.html">
+							Services
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="gallery.html">
+							Galerie
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="contact.html">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main services-page">
+			<!-- HERO SERVICES -->
+			<section class="services-hero">
+				<div class="services-hero__content">
+					<h2 class="services-hero__title">
+						Un service premium
+						<br/>
+						pour votre moto
+					</h2>
+					<div class="services-hero__actions">
+						<button class="btn btn--primary">
+							Prendre rendez-vous
+						</button>
+						<button class="btn btn--outline">
+							Consultation
+						</button>
+					</div>
+				</div>
+				<div class="services-hero__bg">
+					<picture>
+						<source srcset="../images/home_background.webp" type="image/webp"/>
+						<img alt="Moto d'arrière plan" decoding="async" src="../images/home_background.webp"/>
+					</picture>
+				</div>
+			</section>
+			<!-- SERVICES GRID -->
+			<section class="services-grid-section">
+				<div class="services-grid">
+					<!-- Service 1 -->
+					<div class="service-card">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Visite technique
+							</h3>
+						</div>
+						<p class="service-card__desc">
+							Contrôle complet de votre moto par nos experts pour garantir votre sécurité lors de vos trajets.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								à partir de 500 DH
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/viste technique.webp" type="image/webp"/>
+									<img alt="Visite technique icon" decoding="async" loading="lazy" src="../images/viste technique.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<!-- Service 2 -->
+					<div class="service-card">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Vidange complète
+							</h3>
+						</div>
+						<p class="service-card__desc">
+							Vidange moteur, remplacement des filtres et vérification approfondie des fluides vitaux.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								à partir de 800 DH
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/vidage.webp" type="image/webp"/>
+									<img alt="Vidange icon" decoding="async" loading="lazy" src="../images/vidage.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<!-- Service 3 (Red Card from inspiration) -->
+					<div class="service-card service-card--red">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Augmentation de
+								<br/>
+								performance
+							</h3>
+							<span class="service-card__badge">
+								Populaire
+							</span>
+						</div>
+						<p class="service-card__desc">
+							Stage 1, 2 ou 3. Reprogrammation moteur pour une puissance et un couple maximaux.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								à partir de 2500 DH
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/perforamnce.webp" type="image/webp"/>
+									<img alt="Moto performance" decoding="async" loading="lazy" src="../images/perforamnce.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<!-- Service 4 -->
+					<div class="service-card">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Habillage &amp; Wrap
+							</h3>
+							<span class="service-card__badge">
+								Nouveau
+							</span>
+						</div>
+						<p class="service-card__desc">
+							Personnalisez votre moto avec nos films vinyles de haute qualité. Designs uniques sur mesure.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								à partir de 1500 DH
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/design.webp" type="image/webp"/>
+									<img alt="Wrap icon" decoding="async" loading="lazy" src="../images/design.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<!-- Service 5 -->
+					<div class="service-card">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Randonnée en
+								<br/>
+								groupe
+							</h3>
+						</div>
+						<p class="service-card__desc">
+							Rejoignez nos sorties organisées et profitez des meilleurs circuits guidés avec des passionnés.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								Gratuit (Membres)
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/photo3.webp" type="image/webp"/>
+									<img alt="Randonnée icon" decoding="async" loading="lazy" src="../images/photo3.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+					<!-- Service 6 -->
+					<div class="service-card">
+						<div class="service-card__header">
+							<h3 class="service-card__title">
+								Localisation à distance
+							</h3>
+							<span class="service-card__badge">
+								Promo
+							</span>
+						</div>
+						<p class="service-card__desc">
+							Installation de traceur GPS avec application mobile pour sécuriser et suivre votre moto 24/7.
+						</p>
+						<div class="service-card__bottom">
+							<span class="service-card__price">
+								à partir de 1200 DH
+							</span>
+							<div class="service-card__icon-wrapper">
+								<picture>
+									<source srcset="../images/S1000_rouge.webp" type="image/webp"/>
+									<img alt="GPS icon" decoding="async" loading="lazy" src="../images/S1000_rouge.webp"/>
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__bottom">
+				<p class="footer__copy">
+					© 2026 Motoru — Tous droits réservés
+					<br/>
+					Outalha Haddou
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>

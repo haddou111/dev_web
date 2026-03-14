@@ -1,125 +1,181 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motoru — Contact</title>
-    <link rel="icon" href="../images/icon_site.jpg">
-    <link rel="stylesheet" href="../style/index.css">
-    <link rel="stylesheet" href="../style/contact.css">
-</head>
-<body>
-
-    <!-- HEADER -->
-    <header class="header">
-        <h1 class="header__title">Motoru</h1>
-        <nav class="navbar">
-            <input type="checkbox" id="nav-toggle" class="navbar__toggle">
-            <label for="nav-toggle" class="navbar__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../index.html">Accueil</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="about.html">À propos</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="services.html">Services</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="gallery.html">Galerie</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link navbar__link--active" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main contact-page">
-        <div class="contact-header">
-            <h2 class="contact-title">Contactez-nous</h2>
-            <p class="contact-subtitle">Une question ? Un projet ? Écrivez-nous, notre équipe est là pour vous.</p>
-        </div>
-
-        <div class="contact-layout">
-            
-            <!-- Informations de Contact (Côté Gauche) -->
-            <div class="contact-info">
-                <div class="info-block">
-                    <div class="info-icon">📍</div>
-                    <div class="info-text">
-                        <h3>Notre Adresse</h3>
-                        <p>123 Avenue des Motards<br>Khénifra, 54000, Maroc</p>
-                    </div>
-                </div>
-
-                <div class="info-block">
-                    <div class="info-icon">📞</div>
-                    <div class="info-text">
-                        <h3>Téléphone</h3>
-                        <p>+212 5 00 00 00 00<br>+212 6 00 00 00 00</p>
-                    </div>
-                </div>
-
-                <div class="info-block">
-                    <div class="info-icon">📧</div>
-                    <div class="info-text">
-                        <h3>Email</h3>
-                        <p>contact@motoru.ma<br>support@motoru.ma</p>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="#" class="social-btn"><img src="../images/icon/fecebook.jpg" alt="Facebook"></a>
-                    <a href="#" class="social-btn"><img src="../images/icon/insta.jpg" alt="Instagram"></a>
-                    <a href="#" class="social-btn"><img src="../images/icon/twitter.jpg" alt="Twitter"></a>
-                </div>
-            </div>
-
-            <!-- Formulaire (Côté Droit) -->
-            <div class="contact-form-container">
-                <form class="contact-form" action="#" method="POST">
-                    
-                    <div class="form-group">
-                        <input type="text" id="name" class="form-input" placeholder=" " required>
-                        <label for="name" class="form-label">Nom complet</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" id="email" class="form-input" placeholder=" " required>
-                        <label for="email" class="form-label">Adresse Email</label>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" id="subject" class="form-input" placeholder=" " required>
-                        <label for="subject" class="form-label">Sujet</label>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea id="message" class="form-input form-textarea" placeholder=" " required></textarea>
-                        <label for="message" class="form-label">Votre message</label>
-                    </div>
-
-                    <button type="submit" class="btn btn--primary form-submit">Envoyer le message</button>
-                </form>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__bottom">
-            <p class="footer__copy">
-                © 2026 Motoru — Tous droits réservés <br> Outalha Haddou
-            </p>
-        </div>
-    </footer>
-
-</body>
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<title>
+			Motoru — Contact
+		</title>
+		<link href="../images/icon_site.jpg" rel="icon"/>
+		<link href="../style/index.css" rel="stylesheet"/>
+		<link href="../style/contact.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<h1 class="header__title">
+				Motoru
+			</h1>
+			<nav class="navbar">
+				<input class="navbar__toggle" id="nav-toggle" type="checkbox"/>
+				<label class="navbar__hamburger" for="nav-toggle">
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+				</label>
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a class="navbar__link" href="../index.html">
+							Accueil
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="about.html">
+							À propos
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="services.html">
+							Services
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="gallery.html">
+							Galerie
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link navbar__link--active" href="contact.html">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main contact-page">
+			<div class="contact-header">
+				<h2 class="contact-title">
+					Contactez-nous
+				</h2>
+				<p class="contact-subtitle">
+					Une question ? Un projet ? Écrivez-nous, notre équipe est là pour vous.
+				</p>
+			</div>
+			<div class="contact-layout">
+				<!-- Informations de Contact (Côté Gauche) -->
+				<div class="contact-info">
+					<div class="info-block">
+						<div class="info-icon">
+							📍
+						</div>
+						<div class="info-text">
+							<h3>
+								Notre Adresse
+							</h3>
+							<p>
+								123 Avenue des Motards
+								<br/>
+								Khénifra, 54000, Maroc
+							</p>
+						</div>
+					</div>
+					<div class="info-block">
+						<div class="info-icon">
+							📞
+						</div>
+						<div class="info-text">
+							<h3>
+								Téléphone
+							</h3>
+							<p>
+								+212 5 00 00 00 00
+								<br/>
+								+212 6 00 00 00 00
+							</p>
+						</div>
+					</div>
+					<div class="info-block">
+						<div class="info-icon">
+							📧
+						</div>
+						<div class="info-text">
+							<h3>
+								Email
+							</h3>
+							<p>
+								contact@motoru.ma
+								<br/>
+								support@motoru.ma
+							</p>
+						</div>
+					</div>
+					<div class="social-links">
+						<a class="social-btn" href="#">
+							<picture>
+								<source srcset="../images/icon/fecebook.webp" type="image/webp"/>
+								<img alt="Facebook" src="../images/icon/fecebook.webp"/>
+							</picture>
+						</a>
+						<a class="social-btn" href="#">
+							<picture>
+								<source srcset="../images/icon/insta.webp" type="image/webp"/>
+								<img alt="Instagram" src="../images/icon/insta.webp"/>
+							</picture>
+						</a>
+						<a class="social-btn" href="#">
+							<picture>
+								<source srcset="../images/icon/twitter.webp" type="image/webp"/>
+								<img alt="Twitter" src="../images/icon/twitter.webp"/>
+							</picture>
+						</a>
+					</div>
+				</div>
+				<!-- Formulaire (Côté Droit) -->
+				<div class="contact-form-container">
+					<form action="#" class="contact-form" method="POST">
+						<div class="form-group">
+							<input class="form-input" id="name" placeholder=" " required="" type="text"/>
+							<label class="form-label" for="name">
+								Nom complet
+							</label>
+						</div>
+						<div class="form-group">
+							<input class="form-input" id="email" placeholder=" " required="" type="email"/>
+							<label class="form-label" for="email">
+								Adresse Email
+							</label>
+						</div>
+						<div class="form-group">
+							<input class="form-input" id="subject" placeholder=" " required="" type="text"/>
+							<label class="form-label" for="subject">
+								Sujet
+							</label>
+						</div>
+						<div class="form-group">
+							<textarea class="form-input form-textarea" id="message" placeholder=" " required=""></textarea>
+							<label class="form-label" for="message">
+								Votre message
+							</label>
+						</div>
+						<button class="btn btn--primary form-submit" type="submit">
+							Envoyer le message
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__bottom">
+				<p class="footer__copy">
+					© 2026 Motoru — Tous droits réservés
+					<br/>
+					Outalha Haddou
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>

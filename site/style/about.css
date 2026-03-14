@@ -57,21 +57,29 @@ body {
     box-shadow: 0 0 50px rgba(229, 46, 46, 0.15);
     background: #111;
     overflow: hidden;
+    position: relative; /* Added for absolute positioning of children */
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-origin: center center;
 }
 
 .wheel-img {
-    width: 110%;
-    height: 110%;
-    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Precise calibration: translateY(1.5%) aligns the visual center of the image 
+       with the geometric center of the container. */
+    transform: translate(-50%, -50%) translateY(1.5%) scale(1.15);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     opacity: 0.8;
 }
 
 .wheel-center {
     position: absolute;
-    top: 50%;
+    top: 50%; /* Re-centered because the image visual center is now aligned via object-position */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100px;
@@ -145,10 +153,29 @@ body {
 }
 
 /* Positionnement des 4 points cardinaux */
-.node-1 { top: 0; left: 50%; transform: translateX(-50%); } 
-.node-2 { top: 50%; right: 0; transform: translateY(-50%); } 
-.node-3 { bottom: 0; left: 50%; transform: translateX(-50%); } 
-.node-4 { top: 50%; left: 0; transform: translateY(-50%); } 
+.node-1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.node-2 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.node-3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.node-4 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
 
 /* --- INFO PANEL (RIGHT SIDE) --- */
 .info-panel {
@@ -238,7 +265,10 @@ body {
     text-align: center;
 }
 
-.stat-box strong { font-size: 1.5rem; color: #fff; }
+.stat-box strong {
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -258,7 +288,8 @@ body {
     }
 
     .wheel-container {
-        display: none; /* Hide the complex wheel on mobile */
+        display: none;
+        /* Hide the complex wheel on mobile */
     }
 
     .info-panel {
@@ -283,7 +314,7 @@ body {
         background: #141416;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
     .info-content h2 {
