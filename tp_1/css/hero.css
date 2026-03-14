@@ -60,3 +60,22 @@
     color: var(--text-white);
     font-weight: 600;
 }
+
+/* === RESPONSIVE HERO === */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 60px 24px;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .hero__title {
+        font-size: 1.6rem;
+    }
+
+    .hero__image {
+        width: 150px;
+        height: 150px;
+    }
+}

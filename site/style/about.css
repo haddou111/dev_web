@@ -241,21 +241,92 @@ body {
 .stat-box strong { font-size: 1.5rem; color: #fff; }
 
 /* Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+    .about-wheel-section {
+        padding-top: 6rem;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
     .wheel-main-layout {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .wheel-container {
+        display: none; /* Hide the complex wheel on mobile */
+    }
+
+    .info-panel {
+        background: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    .wheel-container { flex: none; width: 100%; height: auto; }
-    .pillars-circle {
-        position: static;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-top: 2rem;
+
+    .info-content {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        display: block !important;
+        padding: 2.5rem 1.5rem !important;
+        background: #141416;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
-    .pillar-node { position: static; width: 100%; transform: none !important; }
-    .info-panel { width: 100%; min-height: auto; align-items: flex-start; }
-    .info-content { position: relative; opacity: 1; transform: none; top: 0; padding: 2rem; display: none; }
-    .info-content.active { display: block; }
+
+    .info-content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .info-content h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: var(--color-primary, #e52e2e);
+    }
+
+    .info-content p {
+        font-size: 1.1rem;
+    }
+
+    .valeurs__list {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-box {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .info-content h2 {
+        font-size: 1.8rem;
+    }
 }

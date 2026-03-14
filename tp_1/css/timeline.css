@@ -72,6 +72,21 @@
     color: var(--primary-color);
 }
 
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding: 60px 24px;
+    }
+
+    .timeline__table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .timeline__desc {
+        min-width: 250px;
+    }
+}
+
 .timeline__mention--encours {
     color: #ffb74d;
 }

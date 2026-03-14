@@ -252,8 +252,30 @@ body {
     }
     .services-hero__title {
         font-size: 2.8rem;
+        margin-bottom: 2rem;
     }
     .services-hero {
         min-height: auto;
+        padding-top: 8rem;
+    }
+    .services-hero__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn--outline, .btn--primary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero__title {
+        font-size: 2.2rem;
+    }
+    .service-card {
+        padding: 1.5rem;
+        min-height: auto;
+    }
+    .service-card__title {
+        font-size: 1.5rem;
     }
 }

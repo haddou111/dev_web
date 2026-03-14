@@ -19,6 +19,12 @@
     color: var(--text-white);
 }
 
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
 .navbar__list {
     list-style: none;
     display: flex;
@@ -38,7 +44,7 @@
     color: var(--text-white);
 }
 
-.navbar__item--active .navbar__link {
+.navbar__link--active {
     color: var(--primary-color);
     font-weight: bold;
 }
@@ -49,8 +55,84 @@
     padding: 8px 18px;
     border-radius: 20px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .navbar__link--cta:hover {
     background-color: var(--text-white);
+}
+
+/* === RESPONSIVE NAVBAR === */
+.navbar__toggle {
+    display: none;
+}
+
+.navbar__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.navbar__hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar__nav {
+        gap: 15px;
+    }
+
+    .navbar__hamburger {
+        display: flex;
+    }
+
+    .navbar__list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--bg-navbar);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        margin: 0;
+    }
+
+    .navbar__toggle:checked ~ .navbar__list {
+        right: 0;
+    }
+
+    .navbar__link--cta {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Animation du hamburger quand ouvert */
+    .navbar__toggle:checked ~ .navbar__hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .navbar__toggle:checked ~ .navbar__hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar__toggle:checked ~ .navbar__hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
 }
