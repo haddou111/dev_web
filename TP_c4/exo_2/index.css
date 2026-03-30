@@ -1,0 +1,51 @@
+/* 2.1 Comprendre le Box Model */
+
+/* Question 3: Reset CSS universel */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    background-color: lightgrey;
+}
+
+/* Question 1: content-box (défaut) */
+/* La largeur totale sera : 200px (width) + 40px (padding) + 10px (border) = 250px */
+.content-box {
+    box-sizing: content-box;
+}
+
+/* Question 2: border-box */
+/* La largeur totale sera exactement 200px (le padding et la bordure sont inclus dedans) */
+.border-box {
+    box-sizing: border-box;
+}
+
+/* 2.2 Centrer un élément horizontalement et verticalement */
+/* Pour centrer verticalement dans la page, on donne une hauteur à body */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement les enfants directs */
+    justify-content: center; /* Centre verticalement les enfants directs */
+}
+
+.centered-box {
+    width: 600px;
+    height: 200px;
+    background-color: #fbf8cc;
+    border: 2px solid #fdffb6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
