@@ -1,0 +1,28 @@
+
+/* la reponse de la question 1 permet de selectionne tout les line dnas la navigation 
+donc en va utlisée le selecteur des element direct de ul et aussi les element direct de li c'est  les line */
+ul > li > a {
+    color :aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ici le meme principe en selecionnée selon l'utilisation de selecteur de type attribut sur la classe de 
+notre element a */
+
+ul > li > a[class="active"] {
+    color:red
+}
+
+/* ici dans cette question ona selectionnée l'rticle qui contient le mot clée 
+featured en utlisatn le symbole ~= de attr  */
+article[class~="featured"] {
+    color: blue;
+}
+
+/* */
+article > p {
+    color: green;
+}
+
+ul > li[class]
+

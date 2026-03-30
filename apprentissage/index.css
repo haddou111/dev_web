@@ -1,0 +1,87 @@
+/* les selecteurs dans css */
+/*
+* les selecteurs c'est un pattern qui permet de ciblée un ou plusieurs elements html ou des balise pour appliquée des style specifique 
+---> les types des seleteurs dans css 
+selecteur de base  : selecteur universel * {} (qui cible tout notre page html )
+                     selcteur qui  cible des element specifique : p{} / div {} ( cibler tout les paragraphe dans la page et aussi tout les div 
+                     selecteur de classe .nomclass (cible tout les element html qui port le nom de cette classe 
+                     selecteur d'ID #nom_id cible l'element qui port cette id ( il est unique ) 
+                     selecteur d'attribut element[attr] 
+selecteur de relation entre ou d'arboressance entre les element 
+desendant : c'est tout les element de dont quelque soit la profondeur  element element element 
+    |____> ici l'idée est d'appliquer le style directement sur n'importe qu'il element dans le dont de notre element racine 
+
+frere direct > : element > enfant directe de ce element peut etre plusieurs element 
+frere adjacent : element + element_frere :  
+frere general : element ~ frere : 
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: navy;
+}
+
+p {
+    color: darkgreen;
+    line-height: 1.6;
+}
+
+
+.bouton {
+    color:red;
+    background-attachment: fixed;
+
+}
+
+.bouton:hover{
+    background-color: aqua;
+}
+
+#header_website{
+    background: #b22828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tous les inputs de type text */
+  input[type="text"] {
+    border: 2px solid orange;
+    padding: 8px;
+  }
+  
+  /* Liens qui commencent par https */
+  a[href^="https"] {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Images qui finissent par .png */
+  img[src$=".png"] {
+    border: 3px solid purple;
+  }
+
+  article p {
+    color :#b22828;
+    font-style:italic;
+  }
+
+ul > li {
+    color: #06210c;
+    background: scroll;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.frere h2 + p {
+    color: purple;
+    margin-top: 5px;
+}
+
