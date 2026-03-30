@@ -1,28 +1,36 @@
 
-/* la reponse de la question 1 permet de selectionne tout les line dnas la navigation 
-donc en va utlisée le selecteur des element direct de ul et aussi les element direct de li c'est  les line */
-ul > li > a {
-    color :aqua;
+/* 1. Sélectionnez tous les liens dans la navigation */
+/* On utilise 'nav a' pour cibler tous les liens (balise <a>) à l'intérieur de la navigation (<nav>) */
+nav a {
+    color: aqua;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
-/* ici le meme principe en selecionnée selon l'utilisation de selecteur de type attribut sur la classe de 
-notre element a */
-
-ul > li > a[class="active"] {
-    color:red
+/* 2. Sélectionnez uniquement le lien actif */
+/* Le point (.) permet de sélectionner une classe. 'a.active' cible les liens ayant la classe 'active' */
+a.active {
+    color: red;
+    font-weight: bold;
 }
 
-/* ici dans cette question ona selectionnée l'rticle qui contient le mot clée 
-featured en utlisatn le symbole ~= de attr  */
-article[class~="featured"] {
-    color: blue;
+/* 3. Sélectionnez l'article qui a la classe featured */
+/* 'article.featured' cible les balises <article> ayant la classe 'featured' */
+article.featured {
+    background-color: #f0f0f0;
+    border: 2px solid blue;
+    padding: 10px;
 }
 
-/* */
-article > p {
+/* 4. Sélectionnez le premier paragraphe de chaque article */
+/* ':first-of-type' sélectionne le premier élément de ce type (ici <p>) dans son parent */
+article p:first-of-type {
     color: green;
+    font-style: italic;
 }
 
-ul > li[class]
-
+/* 5. Sélectionnez les éléments <li> pairs */
+/* ':nth-child(even)' sélectionne les éléments pairs (2, 4, 6...) */
+li:nth-child(even) {
+    background-color: #eee;
+}
