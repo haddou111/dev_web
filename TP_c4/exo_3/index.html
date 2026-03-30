@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3 : Flexbox</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- 3.1 Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mon Logo</div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Exercice 3 : Flexbox</h1>
+        
+        <!-- 3.2 Cartes de même hauteur -->
+        <section class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Carte 1</h3>
+                    <p>Contenu court.</p>
+                </div>
+                <div class="card-footer">Footer 1</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Carte 2</h3>
+                    <p>Contenu beaucoup plus long qui devrait agrandir la carte mais toutes les cartes resteront de même hauteur grâce à Flexbox.</p>
+                    <p>Encore plus de texte...</p>
+                </div>
+                <div class="card-footer">Footer 2</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Carte 3</h3>
+                    <p>Contenu moyen.</p>
+                </div>
+                <div class="card-footer">Footer 3</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

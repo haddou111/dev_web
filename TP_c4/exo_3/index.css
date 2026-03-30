@@ -1,0 +1,61 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 3.1 Barre de navigation */
+.navbar {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Espace entre le logo et les liens */
+    align-items: center; /* Centre verticalement */
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex; /* Les items de la liste sont aussi en flex */
+    list-style: none;
+    gap: 20px; /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 3.2 Cartes de même hauteur */
+main {
+    padding: 2rem;
+}
+
+.card-container {
+    display: flex; /* Aligne les cartes horizontalement */
+    gap: 20px;
+    align-items: stretch; /* C'est le défaut: étire les cartes pour avoir la même hauteur */
+}
+
+.card {
+    flex: 1; /* Chaque carte prend la même largeur */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Organise le contenu de la carte verticalement */
+    background-color: #f9f9f9;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1; /* Permet au contenu de prendre tout l'espace disponible */
+}
+
+.card-footer {
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    /* Grâce à flex-grow: 1 sur le contenu au-dessus, le footer reste toujours en bas */
+}
