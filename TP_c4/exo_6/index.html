@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6 : Variables et Thèmes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Thèmes avec Variables CSS</h1>
+        <p>Cliquez sur le bouton ci-dessous pour changer de thème.</p>
+        <button id="theme-toggle">Changer le thème</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        btn.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            html.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>

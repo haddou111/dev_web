@@ -1,0 +1,45 @@
+/* 6.1 Système de variables CSS pour thèmes */
+
+/* Déclaration des variables de base dans :root */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #3498db;
+    --card-bg: #f9f9f9;
+}
+
+/* Thème sombre: on redéfinit simplement les mêmes variables */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f1f1f1;
+    --primary-color: #e67e22;
+    --card-bg: #2d2d2d;
+}
+
+/* Utilisation des variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
