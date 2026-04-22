@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>envoie_requette</title>
+  </head>
+  <body>
+    <div class="main-contenaire">
+      <select name="metode" id="methodes">
+        <option value="">Methodes</option>
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+      </select>
+
+      <input type="text" name=" url" id="url_requete"  placeholder="url requete"/>
+      <button class="envoyer">Envoyer</button>
+      <br/>
+      <br>
+      <input type="text" name="header-key" id="header-key"  placeholder="header_key"/>
+      <input type="text" name="header-value" id="header-value" placeholder="header_value"/>
+      <button class="ajouter">+</button>
+      <br />
+      <textarea name="body" id="body" placeholder="Body section"></textarea>
+      <br />
+      <textarea name="response-body" id="response-body" placeholder="response section">
+</textarea
+      >
+    </div>
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>

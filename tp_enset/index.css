@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-contenaire {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 20% 1fr minmax(80px, auto);
+    gap: 15px;
+    align-items: center;
+}
+
+br {
+    display: none;
+}
+
+#methodes {
+    grid-column: 1 / 2;
+    /* 1ère colonne */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+#url_requete {
+    grid-column: 2 / 3;
+    /* 2ème colonne */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.envoyer {
+    grid-column: 3 / 4;
+    /* 3ème colonne */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.envoyer:hover {
+    background-color: #efefef;
+}
+
+#header-key {
+    grid-column: 1 / 2;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+#header-value {
+    grid-column: 2 / 3;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.ajouter {
+    grid-column: 3 / 4;
+    /* 3ème colonne, parfaitement aligné sous le bouton Envoyer */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.ajouter:hover {
+    background-color: #efefef;
+}
+
+#body {
+    grid-column: 1 / -1;
+    /* Prend toute la largeur, de la colonne 1 jusqu'à la fin */
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+#response-body {
+    grid-column: 1 / -1;
+    /* Prend toute la largeur, de la colonne 1 jusqu'à la fin */
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    font-size: 1rem;
+
+    /* Double ligne de séparation comme sur le dessin */
+    border: none;
+    border-top: 3px double #aaa;
+    background-color: transparent;
+    margin-top: 10px;
+}
